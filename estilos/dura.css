@@ -1,0 +1,191 @@
+/* ENCABEZADO */
+header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 70px;
+  width: 100%;
+  background: linear-gradient(220.55deg, #dd7bff 0%, #ff6c6c 100%);
+  align-items: center;
+  padding: 0px;
+}
+
+nav {
+  display: inline-block;
+  position: relative;
+}
+
+nav a {
+  color: rgba(0, 0, 0, 0.959);
+  font-size: 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 60px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+body {
+  font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  background-image: url(/recursos/font.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(249, 249, 249);
+ 
+}
+@media screen and (max-width: 680px) {
+header{
+height: min-content;
+width: min-content;
+} 
+footer{
+height: min-content;
+width: min-content;
+}
+}
+
+/* Menu */
+
+nav ul {
+  font-weight: 600px;
+  padding-right: 15px;
+  margin-right: 25px;
+  list-style: none;
+}
+.menu > li {
+  position: relative;
+  display: inline-block;
+}
+.menu > li > a {
+  display: block;
+  padding: 15px 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+}
+.menu li a:hover {
+  color: green;
+  transition: all 0.3s;
+}
+
+/* submenu */
+.submenu {
+  position: absolute;
+  background-color: rgba(17, 15, 15, 0.733);
+  width: 120%;
+  display: none;
+  border-radius: 30px;
+}
+
+.submenu li a {
+  display: block;
+  padding: 15px;
+  color: whitesmoke;
+  font-family: Open Sans;
+  text-decoration: none;
+}
+.menu li:hover .submenu {
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  header {
+    flex-direction: row;
+  }
+  nav {
+    padding: 15px, 0px;
+  }
+  .container{
+  padding-right: 2px;
+  }
+}
+
+/* animacion del titulo */
+.pepe {
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 32px;
+  color: #000;
+}
+
+/* Animation */
+.pepe {
+  animation: animated-text 4s steps(16) 1s 1 normal both,
+animated-cursor 500ms steps(16) infinite normal;
+}
+
+/* text animation */
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 325px;}
+}
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(255,255,255,.70);}
+  to{border-right-color: transparent;}
+}
+
+/* Pie de pagina */
+footer{
+background: #111;
+width: 100%;
+font-family: "Open Sans";
+color: aliceblue;
+}
+.footerContenido{
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+height: 125px;
+}
+.footerContenido h3{
+font-size: 25px;
+font-weight: 400;
+text-transform: capitalize;
+line-height: 3rem;
+color: aquamarine;
+}
+.footerContenido{
+font-size: 20px;
+}
+.contactos{
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 1rem 0 3rem 0;
+}
+.contactos li{
+margin: 0 10px;
+}
+.contactos a{
+text-decoration: none;
+color: aliceblue;
+}
+.contactos a:hover{
+color: #ff6c6c;
+}
+.footer_boton{
+background: #000;
+width: 100vw;
+padding: 1px 0;
+text-align: center;
+font-size: 15px;
+}
+.footer_boton span{
+text-transform: uppercase;
+opacity: .4;
+font-weight: 200px;
+}
