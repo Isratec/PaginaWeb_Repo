@@ -1,0 +1,12 @@
+
+User-agent: *
+
+Disallow: /https://foregone-poll.000webhostapp.com/
+Disallow: /imagenes/
+Disallow: /busqueda
+Disallow: /videos/
+Disallow: /estilos/index.css
+
+
+
+
